@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+    <link rel="stylesheet" href="style.css">
     <head>
         <title>Soil Type Finder</title>
         <script>
@@ -34,11 +35,29 @@
             }
         </script>
     </head>
-    <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Type Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="nav-button" formaction="index.html">Soil Moisture</button>
+        <button class="nav-button" onclick="showSection('soil-ph')">Soil pH</button>
+    </nav>
+
+    <button id="reset-btn">Reset Position</button>
+    <div class="container">
         <h1>Find Soil Type</h1>
-        <label for="numberInput">Enter a number:</label>
-        <input type="number" id="numberInput" />
-        <button onclick="findSoilType()">Suggest me a crop</button>
-        <p id="result"></p>
+        <div class="middle-box">
+            <label for="numberInput">Enter a number:</label>
+            <input type="number" id="numberInput" />
+            <button onclick="findSoilType()">Suggest me a crop</button>
+            <p id="result"></p>
+        </div>
+    </div>
     </body>
 </html>
